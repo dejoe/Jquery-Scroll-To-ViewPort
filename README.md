@@ -7,15 +7,19 @@ Demo - http://dejoe.github.com/Jquery-Scroll-To-ViewPort/
 Usage
 -----
 
-##Setting Up: 
 Include the minified script after Jquery.
+	<script src="js/jquery.js" type="text/javascript"></script>
+	<script src="js/jquery.scrollToViewPort.js" type="text/javascript"></script>
 
-##Invoking It:
 The script can be called as follows:
-$("#target").scrollToViewPort(600);
+	$("#target").scrollToViewPort(600);
 	
 Config
 ------
-Duration of Animation. This function takes a parameter, which specifies the duration of animation in milliseconds. Jquery strings for animation - "fast" and "slow" can also be used.
+Duration of Animation can be passed as a parameter.
+
+The parameter can be any of the following:
+* Animation in milliseconds.
+* Jquery strings for animation -  "fast" and "slow" 
 
 By Default the animation is set to slow.
