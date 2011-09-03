@@ -13,6 +13,9 @@
 		<link href="i/global.css" rel="stylesheet">
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js" type="text/javascript"></script>
+		<script>
+			jQuery.fn.scrollToViewPort=function(a){a=(typeof a=="undefined")?"slow":a;return this.each(function(){$("html,body").animate({scrollTop:$(this).offset().top},a)})};
+		</script>
 		<script src="i/google-code-prettify/prettify.js"></script>
 		<script src="i/application.js"></script>
 	</head>
@@ -23,26 +26,28 @@
 			</header>
 			<div class="row contentbody">
 				<div class="sidebar span3 columns">
-					<ul>
-						<li id="aboutNav"><a class="" href="">About</a></li>
-						<li id="usageNav"><a class="" href="">Code</a></li>
-						<li id="setupNav"><a class="" href="">Usage</a></li>
-						<li id="usageNav"><a class="" href="">Config</a></li>
-						<li id="demoNav"><a class="" href="">Demo</a></li>
+					<ul id="navbar" class="unstyled">
+						<li id="aboutNav"><a class="" href="#">About</a></li>
+						<li id="codeNav"><a class="" href="#">Code</a></li>
+						<li id="usageNav"><a class="" href="#">Usage</a></li>
+						<li id="configNav"><a class="" href="#">Config</a></li>
+						<li id="demoNav"><a class="" href="#">Demo</a></li>
 					</ul>
+					<div class="dummy">&nbsp;</div>
 				</div>
 				<div class="content span9 columns">
 					<section id="aboutContent">
 						<h2>About</h2>
-						<p>This is the Jquery Plugin for the Alternative Scroll To View Port. Use this if you require something simple and want to use it without much of a hassle.</p>
+						<p>This is the Jquery Plugin for the Alternative Scroll To View Port. Use this if you require something simple and light.</p>
 						<p>The entire page is a demo page. Whenever you click on the sidebar, we are using the plugin to navigate. Go to the demo section, if you want code snippets.</p>
 					</section>
 					
 					<section id="codeContent">
 						<h2>Code</h2>
-						<p>Following is the code that we have. </p>
+						<p>The raw code for the plugin</p>
 						<script src="http://gist-it.appspot.com/github/dejoe/Jquery-Scroll-To-ViewPort/raw/master/scrollToViewPort.js"></script>
-						
+						<p>Minified Code</p>
+						<script src="http://gist-it.appspot.com/github/dejoe/Jquery-Scroll-To-ViewPort/raw/master/scrollToViewPort.min.js"></script>
 					</section>
 					
 					<section id="usageContent">
@@ -64,11 +69,30 @@
 						</ul>
 						<p>By Default the animation is set to slow.</p>
 					</section>
+					
+					<section id="demoContent">
+						<h2>Demo</h2>
+						<p>All these demos are to scroll to top. The target in this case is the header. We reference the id - #header. Following are the three ways you can use the plugin.</p>
+						<ol>
+							<li>
+								<p><strong>Default</strong> - <a class="" href="#" onclick="$('#header').scrollToViewPort();" >Click Here</a></p>
+								<pre class="prettyprint">$('#header').scrollToViewPort();</pre>
+							</li>
+							<li>
+								<p><strong>Strings</strong> - Fast (200) ,Slow (600) milliseconds - <a class="" href="#" onclick="$('#header').scrollToViewPort('fast');"> Click Here </a> </p>
+								<pre class="prettyprint">$('#header').scrollToViewPort("fast");</pre>
+							</li>
+							<li>
+								<p><strong>Custom Timing</strong> - 2000 milliseconds - <a class="" href="#" onclick="$('#header').scrollToViewPort(2000);"> Click Here </a> </p>
+								<pre class="prettyprint">$('#header').scrollToViewPort(2000);</pre>
+							</li>	
+						</ol>
+					</section>	
 				</div> <!-- END of right column -->
 			</div> <!-- END of content -->
 			<footer id="footer">
 				<!-- Just to make sure that the page has enough to scroll down. -->
-				<p> Just footer, to make this page longer, and good for demo </p>
+				<p> Look ma, No footer! </p>
 			</footer>
 		</div>
 	</body>

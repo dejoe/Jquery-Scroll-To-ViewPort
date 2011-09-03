@@ -1,0 +1,20 @@
+body {background:url(http://img12.imageshack.us/img12/1349/bgbannere.jpg) repeat-x center -38px;}
+
+.container {width:942px;}
+#header { padding-top:130px; padding-bottom:50px; }
+#header h1 {text-align:center;font-family:'Josefin Slab',Raleway,Lato, 'Open Sans Condensed' ,Arial,Helvetica,sans-serif;font-weight: normal;font-size:68px;}
+#footer { padding-top:20px; padding-bottom:60px;border-top:0px; text-align:center;}
+
+.columns {background-color:#fff;}
+.contentbody {box-shadow: 0px 0px 10px #ccc;border-left: 1px solid #DDD;border-right: 1px solid #DDD;background:#fff;padding-top:35px;padding-bottom:70px;}
+.contentbody  {border-top:6px solid #000;}
+.contentbody h2 {font-size: 30px;line-height: 50px;font-family: 'Open Sans Condensed';text-transform: uppercase;font-weight: normal;}
+.contentbody section {margin-bottom:25px;}
+
+pre.prettyprint {border-radius:0px;border: 1px solid #DEDEDE !important;font-family:Monaco, "Courier New", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", monospace;background-color:ghostWhite;}
+
+.sidebar .dummy{visibility:hidden;}
+#navbar {;background:#fff;width:160px;position:fixed;} 
+ul#navbar li {border-bottom: 1px solid #EEE;}
+ul#navbar li a {padding:10px; display:block; text-transform:uppercase;padding-left:30px;}
+ul#navbar li a:hover {background-color:#efefef;}
