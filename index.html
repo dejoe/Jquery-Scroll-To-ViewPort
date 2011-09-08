@@ -78,15 +78,15 @@
 							<p>All these demos are to scroll to top. The target in this case is the header. We reference the id - #header. Following are the three ways you can use the plugin.</p>
 							<ol>
 								<li>
-									<p><strong>Default</strong> - <a class="" href="#" onclick="$('#header').scrollToViewPort();" >Click Here</a></p>
+									<p><strong>Default</strong> - <a class="" href="#" onclick="$('#header').scrollToViewPort();return false;" >Click Here</a></p>
 									<pre class="prettyprint">$('#header').scrollToViewPort();</pre>
 								</li>
 								<li>
-									<p><strong>Strings</strong> - Fast (200) ,Slow (600) milliseconds - <a class="" href="#" onclick="$('#header').scrollToViewPort('fast');"> Click Here </a> </p>
+									<p><strong>Strings</strong> - Fast (200) ,Slow (600) milliseconds - <a class="" href="#" onclick="$('#header').scrollToViewPort('fast');return false;"> Click Here </a> </p>
 									<pre class="prettyprint">$('#header').scrollToViewPort("fast");</pre>
 								</li>
 								<li>
-									<p><strong>Custom Timing</strong> - 2000 milliseconds - <a class="" href="#" onclick="$('#header').scrollToViewPort(2000);"> Click Here </a> </p>
+									<p><strong>Custom Timing</strong> - 2000 milliseconds - <a class="" href="#" onclick="$('#header').scrollToViewPort(2000);return false;"> Click Here </a> </p>
 									<pre class="prettyprint">$('#header').scrollToViewPort(2000);</pre>
 								</li>	
 							</ol>
