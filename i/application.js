@@ -19,18 +19,36 @@ $(document).ready(function(){
 	/*Setting up the navigation scrolls*/
 	$("#aboutNav").click(function(){
 		$("#aboutContent").scrollToViewPort();
+		return false;
 	});
 	$("#usageNav").click(function(){
 		$("#usageContent").scrollToViewPort();
+		return false;
 	});
 	$("#configNav").click(function(){
 		$("#configContent").scrollToViewPort();
+		return false;
 	});
 	$("#demoNav").click(function(){
 		$("#demoContent").scrollToViewPort();
+		return false;
 	});
 	$("#codeNav").click(function(){
 		$("#codeContent").scrollToViewPort();
+		return false;
+	});
+	
+	$(window).scroll(function(){
+		var posDiff = $(".sidebar").offset().top - $(window).scrollTop();
+		console.log (posDiff);
+		if (posDiff > 35 ){
+			$("#navbar").css("position","static");
+		}else{
+			$("#navbar").css({position:"fixed",top:"35px"});
+		}
+	
 	});
 	
   });
+  
+  

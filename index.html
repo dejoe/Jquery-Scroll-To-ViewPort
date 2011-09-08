@@ -20,76 +20,80 @@
 		<script src="i/application.js"></script>
 	</head>
 	<body>
-		<div class="container">
-			<header id="header">
-				<h1>Jquery Scroll To Plugin</h1>
-			</header>
-			<div class="row contentbody">
-				<div class="sidebar span3 columns">
-					<ul id="navbar" class="unstyled">
-						<li id="aboutNav"><a class="" href="#">About</a></li>
-						<li id="codeNav"><a class="" href="#">Code</a></li>
-						<li id="usageNav"><a class="" href="#">Usage</a></li>
-						<li id="configNav"><a class="" href="#">Config</a></li>
-						<li id="demoNav"><a class="" href="#">Demo</a></li>
-					</ul>
-					<div class="dummy">&nbsp;</div>
-				</div>
-				<div class="content span9 columns">
-					<section id="aboutContent">
-						<h2>About</h2>
-						<p>This is the Jquery Plugin for the Alternative Scroll To View Port. Use this if you require something simple and light.</p>
-						<p>The entire page is a demo page. Whenever you click on the sidebar, we are using the plugin to navigate. Go to the demo section, if you want code snippets.</p>
-					</section>
-					
-					<section id="codeContent">
-						<h2>Code</h2>
-						<p>The raw code for the plugin</p>
-						<script src="http://gist-it.appspot.com/github/dejoe/Jquery-Scroll-To-ViewPort/raw/master/scrollToViewPort.js"></script>
-						<p>Minified Code</p>
-						<script src="http://gist-it.appspot.com/github/dejoe/Jquery-Scroll-To-ViewPort/raw/master/scrollToViewPort.min.js"></script>
-					</section>
-					
-					<section id="usageContent">
-						<h2>Usage</h2>
-						<p>Include the minified script after Jquery.</p>
-						<pre class="prettyprint">&lt;script src="js/jquery.js" type="text/javascript"&gt;&lt;/script&gt;
-&lt;script src="js/jquery.scrollToViewPort.js" type="text/javascript"&gt;&lt;/script&gt;</pre>
-						<p>The script can be called as follows:</p>
-						<pre class="prettyprint linenums">$("#target").scrollToViewPort(600);</pre>
-					</section>
-					
-					<section id="configContent">
-						<h2>Config</h2>
-						<p>Duration of Animation can be passed as a parameter.</p>
-						<p>The parameter can be any of the following:</p>
-						<ul>
-							<li>Animation in milliseconds</li>
-							<li>Jquery strings for animation -  "fast" and "slow"</li>
+		<div>
+			<div class="headerWrapper">
+				<header id="header" class="container">
+					<h1>Jquery Scroll To Plugin</h1>
+				</header>
+			</div>
+			<div class="containerWrapper">
+				<div class="container row contentbody">
+					<div class="sidebar span3 columns">
+						<ul id="navbar" class="unstyled">
+							<li id="aboutNav"><a class="" href="#">About</a></li>
+							<li id="codeNav"><a class="" href="#">Code</a></li>
+							<li id="usageNav"><a class="" href="#">Usage</a></li>
+							<li id="configNav"><a class="" href="#">Config</a></li>
+							<li id="demoNav"><a class="" href="#">Demo</a></li>
 						</ul>
-						<p>By Default the animation is set to slow.</p>
-					</section>
-					
-					<section id="demoContent">
-						<h2>Demo</h2>
-						<p>All these demos are to scroll to top. The target in this case is the header. We reference the id - #header. Following are the three ways you can use the plugin.</p>
-						<ol>
-							<li>
-								<p><strong>Default</strong> - <a class="" href="#" onclick="$('#header').scrollToViewPort();" >Click Here</a></p>
-								<pre class="prettyprint">$('#header').scrollToViewPort();</pre>
-							</li>
-							<li>
-								<p><strong>Strings</strong> - Fast (200) ,Slow (600) milliseconds - <a class="" href="#" onclick="$('#header').scrollToViewPort('fast');"> Click Here </a> </p>
-								<pre class="prettyprint">$('#header').scrollToViewPort("fast");</pre>
-							</li>
-							<li>
-								<p><strong>Custom Timing</strong> - 2000 milliseconds - <a class="" href="#" onclick="$('#header').scrollToViewPort(2000);"> Click Here </a> </p>
-								<pre class="prettyprint">$('#header').scrollToViewPort(2000);</pre>
-							</li>	
-						</ol>
-					</section>	
-				</div> <!-- END of right column -->
-			</div> <!-- END of content -->
+						<div class="dummy">&nbsp;</div>
+					</div>
+					<div class="content span9 columns">
+						<section id="aboutContent">
+							<h2>About</h2>
+							<p>This is the Jquery Plugin for the Alternative Scroll To View Port. Use this if you require something simple and light.</p>
+							<p>The entire page is a demo page. Whenever you click on the sidebar, we are using the plugin to navigate. Go to the demo section, if you want code snippets.</p>
+						</section>
+						
+						<section id="codeContent">
+							<h2>Code</h2>
+							<p>The raw code for the plugin</p>
+							<script src="http://gist-it.appspot.com/github/dejoe/Jquery-Scroll-To-ViewPort/raw/master/scrollToViewPort.js"></script>
+							<p>Minified Code</p>
+							<script src="http://gist-it.appspot.com/github/dejoe/Jquery-Scroll-To-ViewPort/raw/master/scrollToViewPort.min.js"></script>
+						</section>
+						
+						<section id="usageContent">
+							<h2>Usage</h2>
+							<p>Include the minified script after Jquery.</p>
+							<pre class="prettyprint">&lt;script src="js/jquery.js" type="text/javascript"&gt;&lt;/script&gt;
+	&lt;script src="js/jquery.scrollToViewPort.js" type="text/javascript"&gt;&lt;/script&gt;</pre>
+							<p>The script can be called as follows:</p>
+							<pre class="prettyprint linenums">$("#target").scrollToViewPort(600);</pre>
+						</section>
+						
+						<section id="configContent">
+							<h2>Config</h2>
+							<p>Duration of Animation can be passed as a parameter.</p>
+							<p>The parameter can be any of the following:</p>
+							<ul>
+								<li>Animation in milliseconds</li>
+								<li>Jquery strings for animation -  "fast" and "slow"</li>
+							</ul>
+							<p>By Default the animation is set to slow.</p>
+						</section>
+						
+						<section id="demoContent">
+							<h2>Demo</h2>
+							<p>All these demos are to scroll to top. The target in this case is the header. We reference the id - #header. Following are the three ways you can use the plugin.</p>
+							<ol>
+								<li>
+									<p><strong>Default</strong> - <a class="" href="#" onclick="$('#header').scrollToViewPort();" >Click Here</a></p>
+									<pre class="prettyprint">$('#header').scrollToViewPort();</pre>
+								</li>
+								<li>
+									<p><strong>Strings</strong> - Fast (200) ,Slow (600) milliseconds - <a class="" href="#" onclick="$('#header').scrollToViewPort('fast');"> Click Here </a> </p>
+									<pre class="prettyprint">$('#header').scrollToViewPort("fast");</pre>
+								</li>
+								<li>
+									<p><strong>Custom Timing</strong> - 2000 milliseconds - <a class="" href="#" onclick="$('#header').scrollToViewPort(2000);"> Click Here </a> </p>
+									<pre class="prettyprint">$('#header').scrollToViewPort(2000);</pre>
+								</li>	
+							</ol>
+						</section>	
+					</div> <!-- END of right column -->
+				</div> <!-- END of content -->
+			</div> <!-- End of content Wrapper -->
 			<footer id="footer">
 				<!-- Just to make sure that the page has enough to scroll down. -->
 				<p> Look ma, No footer! </p>
