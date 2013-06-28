@@ -40,7 +40,6 @@ $(document).ready(function(){
 	
 	$(window).scroll(function(){
 		var posDiff = $(".sidebar").offset().top - $(window).scrollTop();
-		console.log (posDiff);
 		if (posDiff > 35 ){
 			$("#navbar").css("position","static");
 		}else{
